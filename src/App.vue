@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Calendar/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Calendar from './components/Calendar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Calendar
   }
 }
 </script>
+
+<style lang="sass">
+  body
+    margin: 0
+
+  #app
+    height: 100vh
+    background-color: #191919
+</style>
