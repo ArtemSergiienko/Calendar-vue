@@ -113,11 +113,11 @@
         };
         getDay(d);
         this.calendar = [];
-        // eslint-disable-next-line no-unused-vars
-        for (let i = 0; d.getMonth() == mon; d.getMonth() + 1) {
+        for (; d.getMonth() == mon; d.getMonth() + 1) {
           this.calendar.push(d.getDate());
           d.setDate(d.getDate() + 1);
         }
+
         this.getDaysCalendar(year,month);
       },
       getNextMonth() {
